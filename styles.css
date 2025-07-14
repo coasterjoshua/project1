@@ -5,6 +5,11 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    min-width: 650px;
+}
+
+.website {
+    width: 100%;
 }
 
 /* header styles */
@@ -32,6 +37,7 @@ body {
 .header-links {
     display: flex;
     margin-left: auto;
+    align-items: flex-end;
 }
 
 .logo {
@@ -47,18 +53,28 @@ body {
 ul {
     display: flex;
     gap: 30px;
+    margin-bottom: 0;
 }
 
 .under-header {
     display: flex;
-    justify-content: space-around;
-    gap: 80px;
+    flex-wrap: wrap;
+    align-items: flex-start;
     background-color: #1f2937;
     padding: 80px;
+    justify-content: space-between;
 }
 
 .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 500px;
+}
+
+.themepark {
+    align-self: flex-start;
+    margin-top: 24px;
 }
 
 .uhls-header {
@@ -184,7 +200,7 @@ h1 {
     font-weight: 600;
     justify-content: flex-end;
     padding-bottom: 100px;
-    padding-right: 150px;
+    padding-right: 140px;
 }
 
 /* footer styles*/
