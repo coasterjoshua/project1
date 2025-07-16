@@ -23,26 +23,24 @@ body {
 }
 
 .header-cj {
-    width: 200px;
+    width: 250px;
 }
 
 .header-logo {
     display: flex;
     flex-shrink: 0;
     align-items: center;
-    color: #f9faf8;
     font-size: 24px;
 }
 
 .header-links {
     display: flex;
     margin-left: auto;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .logo {
-    width: 30px;
-    height: 30px;
+    width: 50px;
 }
 
 .themepark {
@@ -54,6 +52,7 @@ ul {
     display: flex;
     gap: 30px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .under-header {
@@ -62,7 +61,7 @@ ul {
     align-items: flex-start;
     background-color: #1f2937;
     padding: 80px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .left-side {
@@ -81,12 +80,13 @@ ul {
     font-size: 40px;
     font-weight: 900;
     color: #f9faf8;
+    margin-bottom: 15px;
 }
 
 .uhls-text {
     font-size: 14px;
     color: #E5E7EB;
-    margin-bottom: 8px;
+    margin-bottom: 30px;
 }
 
 .subscribe-button {
@@ -202,6 +202,73 @@ h1 {
     padding-bottom: 100px;
     padding-right: 140px;
 }
+
+/* signup section styles */
+
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    width: 500px;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    gap: 70px;
+}
+
+.signup-header {
+    display: flex;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.signup-text {
+    color: #E5E7EB;
+}
+
+.signup-button {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 140px;
+    background-color: #ffffff; 
+    color: #1f2937; 
+    border: none;
+    border-radius: 0.5rem; 
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Transition properties for smooth animation */
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover effect for the button */
+.signup-button:hover {
+/* Zoom in slightly (10% larger) */
+    transform: scale(1.2);
+}
+
+/* Focus state for accessibility */
+.animated-button:focus {
+    outline: 2px solid #2563eb; /* Blue outline */
+    outline-offset: 2px;
+}
+
 
 /* footer styles*/
 
